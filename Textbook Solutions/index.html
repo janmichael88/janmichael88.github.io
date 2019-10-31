@@ -6,6 +6,6 @@ title: Jan Michael Austria's Textbook solutions
 	<ul class="posts">
 
 	  {% for solutions in site.solutions %}
-	    <li><span>{{ solutions.date | date_to_string }}</span> ª <a href="{{ solutions.url }}" title="{{ solutions.title }}">{{ solutions.title }}</a></li>
+	    <li><span>{{ _solutions.date | date_to_string }}</span> ª <a href="{{_solutions.url }}" title="{{ _solutions.title }}">{{ _solutions.title }}</a></li>
 	  {% endfor %}
 	</ul>
