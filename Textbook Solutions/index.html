@@ -1,0 +1,11 @@
+---
+layout: default
+title: Jan Michael Austria's Textbook solutions
+---
+	<h1>{{ page.title }}</h1>
+	<ul class="solutions">
+
+	  {% for solutions in site.solutions %}
+	    <li><span>{{ solutions.date | date_to_string }}</span> ª <a href="{{ solutions.url }}" title="{{ solutions.title }}">{{ solutions.title }}</a></li>
+	  {% endfor %}
+	</ul>
